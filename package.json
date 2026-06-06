@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mithilesh-mahure.github.io/LIFELINE-ENDGAME/",
+  "homepage": "https://mithilesh-mahure.github.io/WORD-ZAPPER/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
