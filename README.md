@@ -1,54 +1,125 @@
-# React + TypeScript + Vite
+# WORD-ZAPPER
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and interactive word-based game built with modern web technologies.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 **[Play Now](https://Mithilesh-Mahure.github.io/WORD-ZAPPER/)**
 
-## Expanding the ESLint configuration
+## 📚 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Languages Used
+- **TypeScript** - 80.3%
+- **CSS** - 15.1%
+- **JavaScript** - 3.1%
+- **HTML** - 1.5%
+
+### Key Dependencies
+- React 19.1.0
+- React Confetti - For celebratory animations
+- Clsx - Utility for className management
+- Vite - Lightning-fast build tool
+- TypeScript - For type safety
+
+## 📋 Features
+
+- Interactive word-based gameplay
+- Responsive design
+- Celebratory confetti animations
+- Modern React with TypeScript
+- Fast development experience with Vite
+
+## 🏃 Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Mithilesh-Mahure/WORD-ZAPPER.git
+
+# Navigate to the project directory
+cd WORD-ZAPPER
+
+# Install dependencies
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+# Start the development server
+npm run dev
 ```
+
+The app will be available at `http://localhost:5173`
+
+### Build
+
+```bash
+# Build for production
+npm run build
+```
+
+### Preview
+
+```bash
+# Preview the production build
+npm run preview
+```
+
+### Deploy
+
+```bash
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+## 🧪 Linting
+
+```bash
+# Run ESLint
+npm run lint
+```
+
+## 📁 Project Structure
+
+```
+WORD-ZAPPER/
+├── src/
+│   ├── components/
+│   ├── App.tsx
+│   └── main.tsx
+├── public/
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+## 🔗 Links
+
+- **GitHub Repository**: https://github.com/Mithilesh-Mahure/WORD-ZAPPER
+- **Live Demo**: https://Mithilesh-Mahure.github.io/WORD-ZAPPER/
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+## 👨‍💻 Author
+
+**Mithilesh Mahure**
+- GitHub: [@Mithilesh-Mahure](https://github.com/Mithilesh-Mahure)
+
+---
+
+**Happy Word Zapping!** 🎮✨
