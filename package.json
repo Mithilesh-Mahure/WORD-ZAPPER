@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mithilesh-mahure.github.io/WORD-ZAPPER/",
+  "homepage": "https://Mithilesh-Mahure.github.io/WORD-ZAPPER/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
