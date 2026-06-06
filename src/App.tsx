@@ -21,6 +21,7 @@ export default function AssemblyEndgame() {
     const numGuessesLeft:number = languages.length - 1
     const wrongGuessCount:number =
         guessedLetters.filter((letter:string):boolean => !currentWord.includes(letter)).length
+    const lifelinesRemaining:number = languages.length - wrongGuessCount
     const isGameWon:boolean =
         currentWord.split("").every((letter:string):boolean => guessedLetters.includes(letter))
     const isGameLost:boolean = wrongGuessCount >= numGuessesLeft
@@ -55,11 +56,13 @@ export default function AssemblyEndgame() {
                 isGameOver={isGameOver}
                 isLastGuessIncorrect={isLastGuessIncorrect}
                 wrongGuessCount={wrongGuessCount}
+                totalLifelines={languages.length}
             />
 
             <LanguageChips
                 languages={languages}
                 wrongGuessCount={wrongGuessCount}
+                isGameLost={isGameLost}
             />
 
             <WordLetters
@@ -72,7 +75,7 @@ export default function AssemblyEndgame() {
                 currentWord={currentWord}
                 lastGuessedLetter={lastGuessedLetter}
                 guessedLetters={guessedLetters}
-                numGuessesLeft={numGuessesLeft}
+                numGuessesLeft={lifelinesRemaining}
             />
 
             <Keyboard

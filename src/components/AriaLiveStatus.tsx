@@ -25,7 +25,7 @@ export default function AriaLiveStatus({
                     `Correct! The letter ${lastGuessedLetter} is in the word.` :
                     `Sorry, the letter ${lastGuessedLetter} is not in the word.`
                 }
-                You have {numGuessesLeft} attempts left.
+                You have {numGuessesLeft} lifelines left.
             </p>
             <p>
                 Current word: {currentWord.split("").map((letter:string):string =>

@@ -76,34 +76,37 @@ section.game-status p {
     margin: 4px 0;
 }
 
-/* ---------- Language Chips ---------- */
+/* ---------- Lifelines ---------- */
 
-section.language-chips {
+section.lifelines {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
-    max-width: 450px;
-    margin-bottom: 45px;
+    gap: 5px;
+    max-width: 350px;
+    margin-bottom: 36px;
 }
 
-span.chip {
-    padding: 8px 12px;
-    border-radius: 10px;
-    font-size: 0.9rem;
-    font-weight: 600;
+span.lifeline {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    background-color: #10A95B;
     position: relative;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-span.chip.lost::before {
+span.lifeline.lost {
+    background-color: #ef4444;
+}
+
+span.lifeline.lost::before {
     content: "💀";
     position: absolute;
     inset: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.7);
+    font-size: 0.85rem;
     border-radius: inherit;
 }
 

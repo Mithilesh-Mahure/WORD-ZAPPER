@@ -8,21 +8,18 @@ export function getRandomWord():string {
     return words[getRandomIndex(words)]
 }
 
-export function getFarewellText(language:string):string {
-    const options:string[] = [
-        `Farewell, ${language}`,
-        `Adios, ${language}`,
-        `R.I.P., ${language}`,
-        `We'll miss you, ${language}`,
-        `Oh no, not ${language}!`,
-        `${language} bites the dust`,
-        `Gone but not forgotten, ${language}`,
-        `The end of ${language} as we know it`,
-        `Off into the sunset, ${language}`,
-        `${language}, it's been real`,
-        `${language}, your watch has ended`,
-        `${language} has left the building`
-    ];
+export function getLifelineLostText(wrongGuessCount: number, totalLifelines: number): string {
+    const remaining: number = totalLifelines - wrongGuessCount
+    const messages: string[] = [
+        `Lifeline lost! ${remaining} remaining.`,
+        `Another lifeline gone — ${remaining} left.`,
+        `Careful! Only ${remaining} lifelines left.`,
+        `You're slipping — ${remaining} lifelines to go.`,
+        `Halfway there — ${remaining} lifelines remaining.`,
+        `Danger zone! Just ${remaining} lifelines left.`,
+        `Critical — only ${remaining} lifelines left!`,
+        `One lifeline left — make it count!`,
+    ]
 
-    return options[getRandomIndex(options)];
+    return messages[wrongGuessCount - 1] ?? `Lifeline lost! ${remaining} remaining.`
 }
